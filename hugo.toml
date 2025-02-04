@@ -1,0 +1,32 @@
+baseURL = 'https://linktree.miraikumiko.com'
+languageCode = "en-us"
+title = "Mirai Kumiko's linktree"
+theme = "lynx"
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  attribution = false
+
+  [params.author]
+    name = "Mirai Kumiko"
+    headline = "My link tree^^~"
+    image = "images/avatar.jpg"
+    links = [
+      { link = { href = "https://miraikumiko.com", text = "Website" } },
+      { email = { href = "mailto:murrr@macaw.me" } },
+      { youtube = "https://youtube.com/@miraikumiko" },
+      { instagram = "https://instagram/miraikumiko" },
+      { telegram = "https://t.me/miraikumiko" },
+      { mastodon = "https://mastodon.social/@miraikumiko" },
+      { github = "https://github.com/miraikumiko" },
+      { lichess = "https://lichess.org/@/miraikumiko" }
+    ]
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true

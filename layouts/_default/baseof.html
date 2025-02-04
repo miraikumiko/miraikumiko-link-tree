@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+{{- partial "head.html" . -}}
+
+<body
+    class="bg-neutral m-auto flex h-screen max-w-7xl flex-col px-6 text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-white">
+    <main class="flex-grow">{{- block "main" . }}{{- end }}</main>
+    {{- partial "footer.html" . -}}
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const name_elem = document.getElementsByTagName("h1")[0];
+        const desc_elem = document.getElementsByTagName("h2")[0];
+        const name = name_elem.innerText;
+        const desc = desc_elem.innerText;
+        let i = 0;
+        let y = 0;
+
+        name_elem.innerText = "";
+        desc_elem.innerText = "";
+
+        function typeName() {
+            if (i < name.length) {
+                name_elem.textContent += name[i];
+                i++;
+                setTimeout(typeName, 50);
+            } else {
+                setTimeout(typeDesc, 50);
+            }
+        }
+
+        function typeDesc() {
+            if (y < desc.length) {
+                desc_elem.textContent += desc[y];
+                y++;
+                setTimeout(typeDesc, 50);
+            }
+        }
+
+        typeName();
+    });
+</script>
+
+</html>
