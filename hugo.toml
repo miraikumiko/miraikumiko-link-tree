@@ -18,7 +18,6 @@ disableKinds = ["taxonomy", "term"]
       { email = { href = "mailto:murrr@macaw.me" } },
       { youtube = "https://youtube.com/@miraikumiko" },
       { instagram = "https://instagram.com/miraikumiko" },
-      { telegram = "https://t.me/miraikumiko" },
       { mastodon = "https://mastodon.social/@miraikumiko" },
       { github = "https://github.com/miraikumiko" },
       { lichess = "https://lichess.org/@/Yandura" }
