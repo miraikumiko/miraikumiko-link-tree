@@ -21,7 +21,7 @@ disableKinds = ["taxonomy", "term"]
       { telegram = "https://t.me/miraikumiko" },
       { mastodon = "https://mastodon.social/@miraikumiko" },
       { github = "https://github.com/miraikumiko" },
-      { lichess = "https://lichess.org/@/miraikumiko" }
+      { lichess = "https://lichess.org/@/Yandura" }
     ]
 
 [markup.highlight]
